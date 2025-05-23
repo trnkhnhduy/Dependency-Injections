@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Notification Sender";
+}
+
+<h2>Gửi Thông Báo</h2>
+
+<form asp-action="Send" method="post">
+    <div>
+        <label>Nội dung:</label>
+        <input type="text" name="message" required />
+    </div>
+    <div>
+        <label>Loại thông báo:</label>
+        <select name="type">
+            <option value="Email">Email</option>
+            <option value="SMS">SMS</option>
+            <option value="Push">Push Notification</option>
+        </select>
+    </div>
+    <div style="margin-top: 10px;">
+        <button type="submit">Gửi</button>
+    </div>
+</form>
+
+@if (ViewBag.Result != null)
+{
+    <p style="color:green">@ViewBag.Result</p>
+}
