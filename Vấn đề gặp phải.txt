@@ -1,0 +1,2 @@
+VẤN ĐỀ TRONG ASP.NET
+- Trong mục program.cs em đã có dẫn đường là using NotificationDemo.Services nhưng khi build thì nó bảo là các service không tìm thấy. Cho em hỏi là em sai ở đâu ạ ? Em cảm ơn
